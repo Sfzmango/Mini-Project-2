@@ -16,34 +16,60 @@
 
     <section class="css-snip-flex">
         <section class="box">
-                <h2>Title</h2>
-                <pre>Insert description here</pre>
-                <code>Insert code here <><><> </code>
+                <h2>CSS Media Query</h2>
+                <pre>This is used to check for specific properties from a media device's UI.</pre>
+                <code>@media screen and (max-width: 745px) {
+  body {
+    --bFont: rgb(126, 103, 103);
+    --bkgd: rgb(253, 243, 196);
+    --boxbrdr: olive;
+  }
+}</code>
         </section>
         <section class="box">
-            <h2>Title</h2>
-            <pre>Insert description here</pre>
-            <code>Insert code here <><><> </code>
+            <h2>CSS Hover Glow</h2>
+            <pre>This is used to make boxes glow when hovering on this page.</pre>
+            <code>.css-snip-flex section:hover,
+.css-snip-flex section:hover h2 {
+  box-shadow: var(--shadow) maroon;
+  transition: box-shadow 350ms;
+  }
+}</code>
         </section>
         <section class="box">
-            <h2>Title</h2>
-            <pre>Insert description here</pre>
-            <code>Insert code here <><><> </code>
+            <h2>CSS Universal Selector</h2>
+            <pre>This is used to give every element within the page this style.</pre>
+            <code>* {
+  font-family: monospace;
+}</code>
         </section>
         <section class="box">
-            <h2>Title</h2>
-            <pre>Insert description here</pre>
-            <code>Insert code here <><><> </code>
+            <h2>CSS Root Variables</h2>
+            <pre>This is used to create variables for ease of use for repeating styles on this page.</pre>
+            <code>:root {
+  --bFont: #217e7e;
+  --mrgn: 15px;
+  --shadow: 0px 0px 20px 3px;
+  --thinb: 1px solid sienna;
+}</code>
         </section>
         <section class="box">
-            <h2>Title</h2>
-            <pre>Insert description here</pre>
-            <code>Insert code here <><><> </code>
+            <h2>CSS Flexbox</h2>
+            <pre>This is used to create the flexbox on this page.</pre>
+            <code>.css-snip-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 25px;
+}</code>
         </section>
         <section class="box">
-            <h2>Title</h2>
-            <pre>Insert description here</pre>
-            <code>Insert code here <><><> </code>
+            <h2>CSS Linear-Gradient</h2>
+            <pre>This is used to create the linear-gradient effect on this page.</pre>
+            <code>code {
+  background: linear-gradient(var(--bkgd), 
+  var(--bFont));
+}</code>
         </section>
     </section>
     <footer>

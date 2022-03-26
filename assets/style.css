@@ -47,6 +47,7 @@ header h1 {
   display: inline-block;
   flex-grow: 1;
   border-radius: var(--br);
+  transition: all 0.5s ease;
 }
 
 .css-snip-flex .box h2 {
@@ -70,23 +71,39 @@ header h1 {
 }
 
 pre {
-  margin-left: var(--mrgn);
+  margin: var(--mrgn) var(--mrgn);
   color: var(--bFont);
   position: relative;
   top: -5%;
+  white-space: normal;
+  word-wrap: break-word;
+  padding-right: var(--mrgn);
+  padding-left: var(--mrgn);
+  text-align: center;
 }
 
 code {
   display: block;
+  position: relative;
+  white-space: pre;
+  word-wrap: break-word;
   margin: 15px;
-  margin-bottom: 15px;
   border: var(--thinb);
   border-radius: var(--br);
-  padding: 50px;
   background: linear-gradient(var(--bkgd), var(--bFont));
-  text-align: left;
+  padding: 5px;
+  top: -5%;
+  font-size: 85%;
 }
 
 footer {
   text-align: center;
+}
+
+@media screen and (max-width: 745px) {
+  body {
+    --bFont: rgb(126, 103, 103);
+    --bkgd: rgb(253, 243, 196);
+    --boxbrdr: olive;
+  }
 }
