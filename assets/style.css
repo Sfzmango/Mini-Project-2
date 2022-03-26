@@ -1,0 +1,26 @@
+:root {
+  --bFont: #2f4f4f;
+  --bkgd: azure;
+}
+
+* {
+  font-family: monospace;
+}
+
+body {
+    background-color: var(--bkgd);
+    border: 5px solid #2f4f4f;
+    border-radius: 2%;
+    margin-left: ;
+}
+
+header {
+  display: flex 1 0 0%;
+  text-align: center;
+}
+
+header h1 {
+  color: var(--bFont);
+  font-size: 45px;
+  font
+}
